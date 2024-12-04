@@ -6,7 +6,7 @@
 html,body{
     height: 100%;
     width: 100%;
-    background-color: red;
+    
 }
 
 main{
@@ -15,10 +15,11 @@ main{
     align-items: center;
     height: 100%;
     width: 100%;
+    background-color: rgba(255, 254, 254, 0.924);
     #clock{
             width: 400px;
             height: 400px;
-            background-color: yellow;
+            background-color:rgba(220, 220, 220, 0.683);
             border-radius: 50%;
             box-shadow: 0 0 10px lightblue;
             position: relative;
@@ -34,22 +35,42 @@ main{
                     height: 100%;
                     // background-color: antiquewhite;
                     position:absolute;
-                    font-size: 30px;
+                    font-size: 20px;
                 }
                 .one{
                     transform: rotate(30deg);
+                    span{
+                        transform: rotate(-30deg);
+                        position: absolute;
+                    }
                 }
                 .two{
                     transform: rotate(60deg);
+                    span{
+                        transform: rotate(-60deg);
+                        position: absolute;
+                    }
                 }
                 .three{
                     transform: rotate(90deg);
+                    span{
+                        transform: rotate(-90deg);
+                        position: absolute;
+                    }
                 }
                 .four{
                     transform: rotate(120deg);
+                    span{
+                        transform: rotate(-120deg);
+                        position: absolute;
+                    }
                 }
                 .five{
                     transform: rotate(150deg);
+                    span{
+                        transform: rotate(-150deg);
+                        position: absolute;
+                    }
                 }
                 .six{
                     transform: rotate(180deg);
@@ -60,23 +81,92 @@ main{
                 }
                 .seven{
                     transform: rotate(210deg);
+                    span{
+                        transform: rotate(-210deg);
+                        position: absolute;
+                    }
                 }
                 .eight{
                     transform: rotate(240deg);
+                    span{
+                        transform: rotate(-240deg);
+                        position: absolute;
+                    }
                 }
                 .nine{
                     transform: rotate(270deg);
+                    span{
+                        transform: rotate(-270deg);
+                        position: absolute;
+                    }
                 }
                 .ten{
                     transform: rotate(300deg);
+                    span{
+                        transform: rotate(-300deg);
+                        position: absolute;
+                    }
                 }
                 .eleven{
                     transform: rotate(330deg);
+                    span{
+                        transform: rotate(-330deg);
+                        position: absolute;
+                    }
                 }
                 .twelve{
                     transform: rotate(360deg);
+                    span{
+                        transform: rotate(-360deg);
+                        position: absolute;
+                    }
                 }
                 
+            }    
+            #center-circle{
+                width: 12px;
+                height: 12px;
+                border-radius: 50px;
+                background-color: black;
+
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            #hands{
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                
+                border-radius: 50%;
+                top: 0;
+                opacity: 0.75;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                #hours{
+                    width: 7px;
+                    background-color:purple;
+                    height: 30%;
+                    transform: translateY(-50%);  
+                    border-radius: 5px;
+                }
+                #minute{
+                    width: 5px;
+                    background-color:rgb(242, 124, 144);
+                    height: 40%; 
+                    transform: translateY(-50%);  
+                    border-radius: 5px;
+                }
+                #seconds{
+                    width: 3px;
+                    background-color:brown;
+                    height: 42%; 
+                    position: relative;
+                    transform: translateY(-50%);
+                    border-radius: 5px; 
+                }
             }
     }
 }
