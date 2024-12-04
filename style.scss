@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: red;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    #clock{
+            width: 400px;
+            height: 400px;
+            background-color: yellow;
+            border-radius: 50%;
+            box-shadow: 0 0 10px lightblue;
+            position: relative;
+
+            #numbers{
+                    height: 100%;
+                    width: 100%;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    // background-color: aqua;
+                .number{
+                    height: 100%;
+                    // background-color: antiquewhite;
+                    position:absolute;
+                    font-size: 30px;
+                }
+                .one{
+                    transform: rotate(30deg);
+                }
+                .two{
+                    transform: rotate(60deg);
+                }
+                .three{
+                    transform: rotate(90deg);
+                }
+                .four{
+                    transform: rotate(120deg);
+                }
+                .five{
+                    transform: rotate(150deg);
+                }
+                .six{
+                    transform: rotate(180deg);
+                    span{
+                        transform: rotate(-180deg);
+                        position: absolute;
+                    }
+                }
+                .seven{
+                    transform: rotate(210deg);
+                }
+                .eight{
+                    transform: rotate(240deg);
+                }
+                .nine{
+                    transform: rotate(270deg);
+                }
+                .ten{
+                    transform: rotate(300deg);
+                }
+                .eleven{
+                    transform: rotate(330deg);
+                }
+                .twelve{
+                    transform: rotate(360deg);
+                }
+                
+            }
+    }
+}

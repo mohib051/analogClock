@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: red;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+main #clock {
+  width: 400px;
+  height: 400px;
+  background-color: yellow;
+  border-radius: 50%;
+  box-shadow: 0 0 10px lightblue;
+  position: relative;
+}
+main #clock #numbers {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #clock #numbers .number {
+  height: 100%;
+  position: absolute;
+  font-size: 30px;
+}
+main #clock #numbers .one {
+  transform: rotate(30deg);
+}
+main #clock #numbers .two {
+  transform: rotate(60deg);
+}
+main #clock #numbers .three {
+  transform: rotate(90deg);
+}
+main #clock #numbers .four {
+  transform: rotate(120deg);
+}
+main #clock #numbers .five {
+  transform: rotate(150deg);
+}
+main #clock #numbers .six {
+  transform: rotate(180deg);
+}
+main #clock #numbers .six span {
+  transform: rotate(-180deg);
+  position: absolute;
+}
+main #clock #numbers .seven {
+  transform: rotate(210deg);
+}
+main #clock #numbers .eight {
+  transform: rotate(240deg);
+}
+main #clock #numbers .nine {
+  transform: rotate(270deg);
+}
+main #clock #numbers .ten {
+  transform: rotate(300deg);
+}
+main #clock #numbers .eleven {
+  transform: rotate(330deg);
+}
+main #clock #numbers .twelve {
+  transform: rotate(360deg);
+}/*# sourceMappingURL=style.css.map */
